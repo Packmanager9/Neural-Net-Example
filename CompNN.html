@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<div class="gamepage-wrapper">
+
+    <!-- Basic header. Should hold simple branding and navigation. -->
+    <header class="gamepage-header">
+        <!-- Image provided by Eucalyp Studio in Artificial Intelligence from https://www.iconfinder.com/iconsets/artificial-intelligence-6 -->
+        <!-- <img id="site-logo" src="assets/iconfinder_ArtificialIntelligence29_2890576_blackwhite.png"> -->
+        <ul class="nav-content">
+            <!-- <li class="nav-list-item"><a class="nav-link-text" href="">Home</a></li> -->
+            <li class="nav-list-item"><a class="nav-link-text" href="http://ditzbitz.com/games.html">Games</a></li>
+            <!-- <li class="nav-list-item"><a class="nav-link-text" href="https://www.linkedin.com/in/cole-ditzler-41b160133/" target="_blank">About</a></li> -->
+        </ul>
+    </header>
+
+    <!-- Container for page content. Contains and aligns instructions, game, and ads. -->
+    <div class="game-content-container">
+
+        <!-- Left side banner. Should contain instuctions for the game. -->
+        <aside class="gamepage-left-aside">
+            <h2>Competitive Neural Networks</h2>
+            <ul>
+                <li> 400 neural networks compete to classify the same data.</li>
+                <li> The top left square is the color assigned to the fittest neural network.</li>
+                <li> From left-to-right and top-to-bottom they are ranked by their fitness.</li>
+                <li> Open the console to see more.</li>
+                <li> Pressing 'f' will log out all of the current neural networks.</li>
+                <li> The fittest neural network will be used to produce new neural networks of a similar color every generation.</li>
+                <li> The penalty for incorrect classification rises with time.</li>
+
+            </ul>
+        </aside>
+
+        <!-- Game container. Holds the game for this page scaled to fit.  -->
+
+        <div class="game-container">
+
+            <div id="dog-image-container">
+
+                <canvas id="canvas" width="700" height="700"></canvas>
+
+                <script src="GenScratch.js"></script>
+            </div id="go">
+        </div>
+
+        <!-- Right side banner. No content for now. Perhaps ad-space in the future. -->
+        <aside class="gamepage-right-aside">
+            <!-- Add content here later. -->
+        </aside>
+    </div>
+
+    <!-- Simple footer. Just a copyright notice. -->
+    <footer class="games-footer">
+    </footer>
+
+</div>
+
+</html>
